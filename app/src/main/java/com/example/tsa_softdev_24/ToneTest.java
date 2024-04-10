@@ -103,7 +103,7 @@ public class ToneTest extends AppCompatActivity implements View.OnClickListener 
             ansC.setBackgroundColor(Color.LTGRAY);
             ansD.setBackgroundColor(Color.LTGRAY);
             selectedAnswer = clickedButton.getText().toString();
-            clickedButton.setBackgroundColor(Color.DKGRAY);
+            clickedButton.setBackgroundColor(Color.rgb(173, 216, 230));
         }
     }
 
@@ -255,8 +255,6 @@ public class ToneTest extends AppCompatActivity implements View.OnClickListener 
         score = 0;
         currentQuestionIndex =0;
         loadNewQuestion();
-
-
         Intent intent = new Intent(ToneTest.this, MainActivity.class);
         startActivity(intent);
     }

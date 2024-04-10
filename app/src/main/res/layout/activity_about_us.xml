@@ -61,7 +61,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="IceBreaker is an intuitive AI designed to help people enter conversations and communicate with people in their lives easier. By using IceBreaker, users can understand how to say things to different people using diverse tones and in various environments. Alongside this, IceBreaker also provides users with lessons on how to approach different situations, helping users learn how to change their approach to conversations depending on the situation. Through continual use of IceBreaker, users can not only make improved conversations with their peers and loved ones, but also learn more about themselves and how they can change their approach to conversation. Our mission, and the goal of IceBreaker, is to help improve communication around the world and allow for people to grow and evolve their emotional capacity to better relations with those around them."
+                        android:textStyle="bold"
+                        android:text="IceBreaker is an intuitive AI designed to help people enter conversations and communicate with people in their lives easier. By using IceBreaker, users can understand how to say things to different people using diverse tones and in various environments. Alongside this, IceBreaker also provides users with lessons on how to approach different situations, helping users learn how to change their approach to conversations depending on the situation. Through continual use of IceBreaker, users can not only make improved conversations with their peers and loved ones, but also learn more about themselves and how they can change their approach to conversation. Our mission, and the goal of IceBreaker, is to help improve communication around the world and allow for people to grow and evolve their emotional capacity to better relations with those around them.
+                        \n
+                        \nSources used to augment the AI model are:
+                        \n- https://www.dalecarnegie.com/en/resources/ebooks
+                        \n- https://students.wustl.edu/wp-content/uploads/2018/11/How-to-Write-Good-Emails-Accessible-PDF.pdf
+                        \n- https://www.dalecarnegie.com/en/resources/white-papers
+                        \n- https://www.umass.edu/ipo/sites/default/files/slang.pdf
+                        \n- https://www.amanet.org/assets/1/6/communicating-with-tact-and-credibility1.pdf
+                        \n- https://www.anxietycanada.com/sites/default/files/EffectiveCommunication.pdf "
                         android:textSize="16sp"
                         android:textColor="#666666"/>
                 </LinearLayout>

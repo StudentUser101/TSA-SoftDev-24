@@ -58,7 +58,7 @@ public class NewChatsActivity extends AppCompatActivity {
         answer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                String body = "{\"name\": \"Apple iPad Air\", \"data\": { \"Generation\": \"4th\", \"Price\": \"519.99\", \"Capacity\": \"256 GB\" }}";
+
 
                 String current_tone = t1.getText().toString();
                 String current_recipient = t2.getText().toString();
@@ -108,11 +108,8 @@ public class NewChatsActivity extends AppCompatActivity {
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-                AlertDialog show = new AlertDialog.Builder(v.getContext())
-                        .setTitle(result)
-                        .setCancelable(false)
-                        .show();
-                currentChat = new Chat(result.substring(11, result.length() - 2), currentChatData);
+
+                currentChat = new Chat(result.substring(13, result.length() - 3), currentChatData);
 
 
                 Intent intent = new Intent(NewChatsActivity.this, OldChatsTemplateActivity.class);

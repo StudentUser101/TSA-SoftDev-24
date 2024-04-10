@@ -1,30 +1,29 @@
 package com.example.tsa_softdev_24;
 
+import static android.text.Html.fromHtml;
+
+import android.annotation.SuppressLint;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.text.Html;
 import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
-import java.net.URL;
-
-import javax.net.ssl.HttpsURLConnection;
+import java.text.MessageFormat;
+import java.util.Objects;
 
 
 public class OldChatsTemplateActivity extends AppCompatActivity {
+    @SuppressLint("SetTextI18n")
     public static void updateData(Chat c, TextView b1, TextView b2, TextView b3) {
         b1.setText("Tone: " + c.getChatTone() + "\n\nRecipient: " + c.getChatRecipent() + "\n\nSetting: " + c.getChatSetting());
+        b1.setTypeface(b1.getTypeface(), Typeface.BOLD);
         b2.setText("User: " + c.getChatPrompt());
-        b3.setText("Assistant: " + c.getResponse());
+        b2.setTypeface(b2.getTypeface(), Typeface.BOLD);
+        String b3_parsed = c.getResponse().replace("\\\n", (System.getProperty("line.separator")));
+        b3.setText(fromHtml(MessageFormat.format("Assistant: {0}", b3_parsed)));
+        b3.setTypeface(b3.getTypeface(), Typeface.BOLD);
     }
 
 
