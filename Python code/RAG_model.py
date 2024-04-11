@@ -3,7 +3,7 @@ import cohere
 
 
 
-co = cohere.Client('dl3QEtESsmTw931F4SgWwNTxVVPLaaf7WbkfpA41')
+co = cohere.Client(cohere_api_key)
 
 
 
